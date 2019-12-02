@@ -18,8 +18,11 @@ import './CircleSelector.css'
 
 
 const CircleSelector = (props) => {
+    console.log('props = ' + props)
 
     const buttonClick = (e) => {
+        console.log('e = ' + e)
+        console.log('e.target = ' + e.target)
         props.onClick(e.target.value)
         // this.setState({
         //     [e.target.name]: e.target.value

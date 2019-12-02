@@ -12,9 +12,12 @@ class App extends Component {
 
 
   changeSelection = (newSelection) => {
+    console.log('newSelection = ' + newSelection)
     this.setState({
-      selected: newSelection
-    })
+      selected: newSelection,
+    }
+
+    )
 
   }
 
@@ -32,10 +35,12 @@ class App extends Component {
 
         <CircleSelector
           selected={this.state.selected}
-          onClick={this.changeSelection} />
-        <Circles
-          selected={this.state.selected} />
+          onClick={this.changeSelection}
         />
+        <Circles
+          selected={this.state.selected}
+        />
+
 
       </div>
     )
